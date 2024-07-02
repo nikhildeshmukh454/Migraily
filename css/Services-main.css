@@ -1,0 +1,237 @@
+/* Resetting default margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #08bd80, #ffffff, #8edcca, #08bd80);
+    line-height: 1.6;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding-top: 6%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 1.5rem;
+    color: #3c4852;
+}
+/* Navigation */
+nav {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav #nav-logo {
+    max-width: 15%; /* Adjust as needed */
+    margin-left: 5%; /* Adjust as needed */
+}
+
+nav #nav-logo img {
+    max-height: 100%; /* Ensure the logo doesn't exceed the height of the navigation bar */
+    max-width: 100%; /* Ensure the logo doesn't exceed the width of the navigation bar */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 75%; /* Adjust to leave space for the logo */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #08bd80;
+}
+
+#top-travel-blog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 20px;
+    padding-top: 6%;
+
+    background: linear-gradient(45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    border-radius: 10px;
+}
+
+#top-travel-blog h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    left: 30%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Form Styles */
+form {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+    margin: 20px auto; /* Center horizontally */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left; /* Align label text left */
+}
+
+input[type="text"], select {
+    width: 100%; /* Full width input */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #08bd80;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #07a36e;
+}
+
+
+/* Message Container */
+#message-container {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    color: #333;
+}
+
+/* Service Information Display */
+#service-info {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    margin-bottom: 20px;
+    width: calc(30% - 30px); /* Adjust width as needed */
+    max-width: 300px; /* Limit maximum width */
+    flex: 1 0 auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out; /* Adding smooth hover effect */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+}
+
+.service-item p {
+    margin: 10px 0;
+}
+
+.service-item h3 {
+    margin-top: 0;
+    color: #08bd80;
+    border-bottom: 2px solid #08bd80; /* Adding a bottom border under the heading */
+}
+
+
+/* Container styles for form */
+#service-form {
+   
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Label styles */
+#service-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Select styles */
+#service-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Submit button styles */
+#service-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#service-form input[type="submit"]:hover {
+    background-color: #45a049;
+}

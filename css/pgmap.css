@@ -1,0 +1,136 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #08bd80;
+  }
+  
+  /* Navigation Styles */
+  
+  /* Navigation */
+nav {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #08bd80;
+}
+
+  
+  /* Header Styles */
+  
+  .header {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 1px #000000;
+  }
+  
+  /* Content Styles */
+  
+  .content {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  /* Map Styles */
+  
+  #pgmap {
+    
+   
+    width: 60%;
+    height: 80vh;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  /* Instruction Styles */
+  
+  #instruction {
+   
+    left: 0;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 1200px) {
+    nav ul li {
+      margin-right: 15px;
+    }
+    .header h1 {
+      font-size: 30px;
+    }
+   
+  }
+  
+  @media (max-width: 992px) {
+   
+    .header h1 {
+      font-size: 24px;
+    }
+   
+  }
+  
+  @media (max-width: 768px) {
+    
+    .header h1 {
+      font-size: 18px;
+    }
+   
+  }
+  
+  @media (max-width: 480px) {
+    nav ul li a {
+      padding: 5px;
+    }
+    .header h1 {
+      font-size: 14px;
+    }
+   
+  }

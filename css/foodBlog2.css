@@ -1,0 +1,113 @@
+body{
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+}
+nav {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav #nav-logo {
+    max-width: 15%; /* Adjust as needed */
+    margin-left: 5%; /* Adjust as needed */
+}
+
+nav #nav-logo img {
+    max-height: 100%; /* Ensure the logo doesn't exceed the height of the navigation bar */
+    max-width: 100%; /* Ensure the logo doesn't exceed the width of the navigation bar */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 75%; /* Adjust to leave space for the logo */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #08bd80;
+}
+
+
+
+
+/* Content */
+.content {
+    padding: 5%;
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    margin-top: 60px; /* To avoid content hidden under fixed nav */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: min(10vw, 50px);
+    text-align: center;
+    color: #08bd80;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+p.intro {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #08bd80;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #06a56d;
+}

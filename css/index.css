@@ -1,0 +1,343 @@
+Resetting default margins and paddings
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #000000;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header */
+body {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #3c4852;
+}
+
+#pgmap {
+    
+   left: 20%;
+    width: 60%;
+    height: 80vh;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+
+/* Navigation */
+nav {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav #nav-logo {
+    max-width: 15%; /* Adjust as needed */
+    margin-left: 5%; /* Adjust as needed */
+}
+
+nav #nav-logo img {
+    max-height: 100%; /* Ensure the logo doesn't exceed the height of the navigation bar */
+    max-width: 100%; /* Ensure the logo doesn't exceed the width of the navigation bar */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 75%; /* Adjust to leave space for the logo */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #08bd80;
+}
+
+
+
+
+
+/* Logo */
+#logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    margin-right: 10px;
+}
+
+.social-media-icons img {
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+}
+
+/* Styles for the sections */
+#Type-service, #top-food-blog, #top-travel-blog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 20px;
+    padding-top: 6%;
+
+    background: linear-gradient(45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    border-radius: 10px;
+}
+
+/* Heading styles */
+#Type-service h1, #top-food-blog h1, #top-travel-blog h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    left: 30%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.services {
+    max-width: 20%;
+    flex: 1 1 20%; /* Flex basis with a fallback */
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services:hover {
+    transform: scale(1.1);
+    background-color: #4CAF50;
+}
+
+.services a {
+    text-decoration: none;
+    color: #333;
+}
+
+.services img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.services h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.services p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+    flex-grow: 1;
+}
+
+
+.sell-all {
+    right: 0;
+    height: 4%;
+    background-color: #ffffff;
+    border-radius: 10%;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.sell-all:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+
+
+.services a {
+    display: block; /* Ensure the entire container is clickable */
+    text-decoration: none;
+}
+
+.services img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .services {
+        flex: 1 1 calc(33.33% - 20px); /* 3 per row on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .services {
+        flex: 1 1 calc(50% - 20px); /* 2 per row on smaller desktops */
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex: 1 1 calc(50% - 20px); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .services {
+        flex: 1 1 calc(100% - 20px); /* 1 per row on mobile devices */
+    }
+}
+
+/* Navigation and Title Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        font-size: 70%;
+    }
+
+    #Type-service h1, #top-food-blog h1, #top-travel-blog h1 {
+        font-size: 80%;
+        font-weight: bold;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
+
+/* Style the dropdown menu */
+#location-type {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 20px;
+   
+  align-self: center;
+  background-color: #fff;
+
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1.5rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+  
+  
+  #location-type option {
+    padding: 10px;
+  }
+  
+  /* Style the update map button */
+  #update-map {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #update-map:hover {
+    background-color: #3e8e41;
+  }

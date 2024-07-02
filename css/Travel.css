@@ -1,0 +1,109 @@
+/* Resetting default margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #08bd80;
+}
+
+/* Main Box */
+#main-box {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Sub Box */
+.sub-box {
+    background: linear-gradient(45deg, #00e1ad, #8edcca, #8edcca, #00e1ad);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sub-box h2 {
+    color: #004e34;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.sub-box img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.sub-box p {
+    color: #3c4852;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        font-size: 70%;
+    }
+
+    .sub-box h2 {
+        font-size: 1.3em;
+    }
+
+    .sub-box p {
+        font-size: 1em;
+    }
+}

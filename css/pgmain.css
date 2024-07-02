@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+}
+
+header {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+   
+    color: #08bd80;
+    font-size: 5vw;
+    
+}
+
+h2 {
+    font-size: 3vw;
+    color: #000;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #08bd80;
+}
+
+
+
+.header {
+    margin-top: 6%;
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    text-align: center;
+}
+
+.header h1 {
+    color: #08bd80;
+    font-size: 4vw;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.header h2 {
+    font-size: 2vw;
+    color: #000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.pg-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+
+}
+
+.pg-box {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1vw;
+    width: 20vw;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pg-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pg-box h3 {
+    margin: 0.5vw 0;
+    color: #08bd80;
+}
+
+.pg-box p {
+    margin: 0.5vw 0;
+    color: #3c4852;
+}
+
+
+/* Resetting default margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #000000;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header */
+body {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #3c4852;
+}
+
+#pgmap {
+    
+   
+    width: 100vw;
+    height: 80vh;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+
+/* Navigation */
+nav {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #08bd80;
+}
+
+
+/* Logo */
+#logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    margin-right: 10px;
+}
+
+.social-media-icons img {
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+}
+
+/* Styles for the sections */
+#Type-service, #top-food-blog, #top-travel-blog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 20px;
+    background: linear-gradient(45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    border-radius: 10px;
+}
+
+/* Heading styles */
+#Type-service h1, #top-food-blog h1, #top-travel-blog h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    left: 30%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.services {
+    flex: 1 1 20%; /* Flex basis with a fallback */
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services:hover {
+    transform: scale(1.1);
+}
+
+.services a {
+    text-decoration: none;
+    color: #333;
+}
+
+.services img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.services h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.services p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+    flex-grow: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .services {
+        flex: 1 1 calc(33.33% - 20px); /* 3 per row on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex: 1 1 calc(50% - 20px); /* 2 per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        flex: 1 1 100%; /* 1 per row on very small screens */
+    }
+}
+
+/* Navigation Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        font-size: 70%;
+    }
+
+    #Type-service h1, #top-food-blog h1, #top-travel-blog h1 {
+        font-size: 80%;
+        font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    }
+
+   
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
