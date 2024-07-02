@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="MVPOH1.css">
+</head>
+<body> 
+    <button id="scrollToTopBtn" class="scroll-to-top" style="position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #05d38e;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none">Scroll to Top</button>
+    <div class="con"> 
+
+        <div class="box"> 
+
+            <img src="Blog/project img/pexels-david-egon-2240361.jpg" alt="" id="a"> 
+
+            <h3 id="c"style="font-size: min(10vw,50px);">Hyderabad Unveiled: A Traveler's Tale <small></small></h3> 
+
+        </div> 
+
+        <section> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/pexels-saji-kamalasanan-5491756.jpg');"> 
+
+                <h2><strong>Charminar</strong></h2> 
+
+            </div> 
+
+            <p> 
+
+            
+                <br>
+<strong>History:</strong> Charminar, built in 1591, is a historic monument in Hyderabad, India. 
+         It was constructed by Quli Qutb Shah to commemorate the end of a plague. 
+
+<strong>Specialty:</strong> Unique architecture with Islamic and Indian styles, featuring grand arches and a mosque on the top floor. 
+
+<strong>Best Time to Go:</strong> Early mornings or evenings to avoid heat. 
+
+<strong>Food to Try:</strong> Hyderabadi biryani and Irani chai near Charminar. 
+
+<strong>Things to Carry:</strong> Comfortable shoes, water, camera. 
+
+<strong>Things to Do:</strong> Explore the bustling market, climb for panoramic views. 
+
+            
+
+            </p> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/Makkah Masjid.jpg');"> 
+
+                <h2><strong>Makkah Masjid</strong></h2> 
+
+            </div> 
+
+            <p> 
+
+            
+
+<strong>History:</strong> Built during 1614-1694, Makkah Masjid is one of India's largest mosques,
+        commissioned by Muhammad Quli Qutb Shah. 
+        <br>
+<strong>Specialty:</strong> Grandeur in its huge courtyard, impressive architecture, and sacred relics. 
+<br>
+<strong>Best Time to Go:</strong> Non-prayer times, early mornings. 
+<br>
+<strong>Food to Try:</strong> Hyderabadi kebabs and traditional sweets nearby. 
+<br>
+<strong>Things to Carry:</strong> Respectful attire, socks for entry. 
+<br>
+<strong>Things to Do:</strong> Admire the massive structure, experience the serene ambiance. 
+<br>
+
+            </p> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/golconda-fort-3992421_1280.jpg');"> 
+
+                <h2><strong>Golconda Fort</strong></h2> 
+
+            </div> 
+
+            <p>      
+
+<strong>History:</strong> Golconda Fort, dating back to the 13th century, was once the capital of the Qutb Shahi dynasty. 
+
+<strong>Specialty:</strong> Known for advanced acoustics, majestic gates, and the Fateh Rahben gun, one of the world's largest cannons. 
+<br>
+<strong>Best Time to Go:</strong> Early mornings or evenings due to the weather. 
+<br>
+<strong>Food to Try:</strong> Local snacks and Hyderabadi cuisine. 
+<br>
+<strong>Things to Carry:</strong> Comfortable shoes, water, hat, camera. 
+<br><strong>Things to Do:</strong> Explore the fort's complex architecture, witness the sound and light show. 
+<br>
+
+        
+
+            </p> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/Chowmahalla Palace.jpeg');"> 
+
+                <h2><strong>Chowmahalla Palace</strong></h2> 
+
+            </div> 
+
+            <p> 
+
+                <br>
+                <br>      
+
+<strong>History:</strong> Chowmahalla Palace served as the seat of the Asaf Jahi dynasty rulers from 1750 to 1950. 
+<br>
+<strong>Specialty:</strong> Palace elegance with grand architecture, lush gardens, and opulent interiors. 
+<br>
+<strong>Best Time to Go:</strong> Mornings to avoid crowds and heat. 
+<br>
+<strong>Food to Try:</strong> Traditional Hyderabadi dishes. 
+<strong>Things to Carry:</strong> Comfortable footwear, camera. 
+<br>
+<strong>Things to Do:</strong> Marvel at the architectural beauty, explore the museum, stroll through the gardens.
+            </p> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/Osman Sagar Lake.jpg');"> 
+
+                <h2><strong>Osman Sagar Lake</strong></h2> 
+
+            </div> 
+
+            <p>
+
+<strong>History:</strong> Osman Sagar Lake, constructed in 1920, is a serene water reservoir providing drinking water to Hyderabad. 
+<br>
+<strong>Specialty:</strong> Surrounded by lush greenery, the lake offers a peaceful escape from the city's hustle. 
+<br><strong>Best Time to Go:</strong> Early mornings or late afternoons. 
+<br>
+<strong>Food to Try:</strong> Carry your own snacks or enjoy a picnic. <br>
+<strong>Things to Carry:</strong> Picnic essentials, binoculars for birdwatching. 
+<br><strong>Things to Do:</strong> Enjoy the tranquility, birdwatching, and picnicking by the lake. 
+<br>
+<br>
+            
+
+            </p> 
+
+        </section> 
+
+    </div> 
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // This provides a smooth scroll animation
+            });
+        }
+    
+        // Attach the scrollToTop function to the button click event
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+    
+        // Show the button when the user scrolls down 200px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    </script>
+</body> 
+</html>

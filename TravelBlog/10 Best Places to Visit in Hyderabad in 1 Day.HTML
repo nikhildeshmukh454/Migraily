@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="MVPOH1.css">
+</head>
+<body> 
+    <button id="scrollToTopBtn" class="scroll-to-top" style="position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #05d38e;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none">Scroll to Top</button>
+    <div class="con"> 
+
+        <div class="box"> 
+
+            <img src="Blog/project img/pexels-david-egon-2240361.jpg" alt="" id="a"> 
+
+            <h1 id="c" style="font-size: min(10vw,50px);"><p style="color: white;">Nizam's City Chronicles: Exploring Hyderabad's Rich Heritage<small></small></p></h1> 
+
+        </div> 
+
+        <section> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/KBR Park.jpg');"> 
+
+                <h2><strong>KBR Park</strong></h2> 
+
+            </div> 
+
+            <p> 
+
+                <br>
+                <br>        
+
+<strong>History:</strong> Kasu Brahmananda Reddy National Park, established in 1994, is a natural urban oasis in Hyderabad, India. 
+
+<strong>Specialty:</strong> A lush green expanse offering a variety of flora and fauna, ideal for nature lovers and fitness enthusiasts. 
+
+<strong>Best Time to Go:</strong> Early mornings for birdwatching and cool evenings for a stroll. 
+
+<strong>Food to Try:</strong> Carry your snacks or head to nearby cafes. 
+
+<strong>Things to Carry:</strong> Comfortable shoes, water, camera. 
+
+<strong>Things to Do:</strong> Nature walks, birdwatching, photography. 
+         
+
+            </p> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/moulaali1.jpg');"> 
+
+                <h2><strong>Moula Ali Hill</strong></h2> 
+
+            </div> 
+
+            <p> 
+
+                <br>
+                <br>    
+
+<strong>History:</strong> Moula Ali Hill features an ancient mosque and a Dargah, believed to date back to the 9th century. 
+
+
+<strong>Specialty:</strong> Offers panoramic views of the city, and a blend of historical and religious significance. 
+ 
+
+<strong>Best Time to Go:</strong> Early mornings or late afternoons. 
+
+<strong>Food to Try:</strong> Local snacks available around the area. 
+
+<strong>Things to Carry:</strong> Respectful attire, water, camera. 
+
+
+<strong>Things to Do:</strong> Explore the mosque, climb to the hilltop for stunning views. 
+     
+            </p> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/qutb-shahi-tombs-7046372_1280.jpg');"> 
+
+                <h2><strong>Qutub Shahi Tombs</strong></h2> 
+
+            </div> 
+
+            <p> 
+
+            <br>
+            <br>
+
+<strong>History:</strong> Qutub Shahi Tombs are the final resting place of the Qutub Shahi dynasty rulers, built between 16th and 17th centuries. 
+
+<strong>Specialty:</strong> Intricately designed tombs, showcasing a blend of Persian and Indian architectural styles. 
+
+
+<strong>Best Time to Go:</strong> Mornings or evenings for cooler temperatures. 
+
+
+<strong>Food to Try:</strong> Local eateries offering Hyderabadi cuisine. 
+
+
+<strong>Things to Carry:</strong> Respectful attire, camera. 
+
+<strong>Things to Do:</strong> Explore the tombs, learn about the history, appreciate the architecture. 
+
+
+            </p> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/Hussain Sagar Lake.jpeg');"> 
+
+                <h2><strong>Hussain Sagar Lake</strong></h2> 
+
+            </div> 
+
+            <p> 
+
+                <br>
+                <br>
+         
+
+<strong>History:</strong> Built in 1562, Hussain Sagar Lake is a historic artificial lake, connecting Hyderabad and Secunderabad. 
+
+<strong>Specialty:</strong> Features a large Buddha statue in the middle, accessible by boat. 
+
+ 
+<strong>Best Time to Go:</strong> Evenings for a pleasant stroll by the lake. 
+
+<strong>Food to Try:</strong> Street food and snacks available along the lakeside. 
+
+<strong>Things to Carry:</strong> Comfortable shoes, camera. 
+<strong>Things to Do:</strong> Boating, enjoy the view, visit the Buddha statue. 
+
+            </p> 
+
+            <div class="bg" id="a4" style="background-image: url('60 places to try/Spanish_Mosque_Hyderabad.jpg');"> 
+
+                <h2><strong>Spanish Mosque</strong></h2> 
+
+            </div> 
+
+            <p> 
+
+    
+           
+
+<strong>History:</strong> The Spanish Mosque, also known as Masjid Iqbal Ud Daula, was built by a noble in the late 19th century. 
+
+
+<strong>Specialty:</strong> Unique architecture blending Spanish and Indo-Islamic styles. 
+
+<strong>Best Time to Go:</strong> Non-prayer times for exploration. 
+
+
+<strong>Food to Try:</strong> Local delicacies available nearby. 
+
+<strong>Things to Carry:</strong> Respectful attire, water, camera. 
+
+<strong>Things to Do:</strong> Admire the distinct architecture, explore the surroundings. 
+
+<br>
+            <br>
+
+
+            </p> 
+
+        </section> 
+
+    </div> 
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // This provides a smooth scroll animation
+            });
+        }
+    
+        // Attach the scrollToTop function to the button click event
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+    
+        // Show the button when the user scrolls down 200px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    </script>
+</body> 
+</html>

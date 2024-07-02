@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MVPOH1.css">
+</head>
+<body>
+
+    <button id="scrollToTopBtn" class="scroll-to-top" style="position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #05d38e;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none">Scroll to Top</button>
+    <div class="con">
+        <div class="box">
+            <img src="Blog/project img/pexels-david-egon-2240361.jpg" alt="" id="a">
+            <h1 id="c" style="font-size: min(10vw,50px);">Hyderabad's Neighborhoods: A Locals' Guide <small> </small></h1>
+        </div>
+      
+        <section>
+            <div class="bg" id="a4" style="background-image: url('');">
+                <h2><strong><i>Texas Rocks Valley:</i></strong></h2>
+            </div>
+            <p>
+                <br>
+                <strong>History:</strong> Texas Rocks Valley, a climbing gym, offers rock climbing experiences in Hyderabad.
+                <br>
+                <strong>Specialty:</strong> Indoor climbing with various difficulty levels, suitable for beginners to experts.
+                <br>
+                <strong>Best Time to Go:</strong> Weekdays to avoid crowds.
+                <br>
+                <strong>Food to Try:</strong> Nearby cafes offer snacks and refreshments.
+                <br>
+                <strong>Things to Carry:</strong> Comfortable clothing, climbing shoes.
+                <br>
+                <strong>Things to Do:</strong> Enjoy rock climbing, learn and improve your skills.
+                <br><br>
+                Texas Rocks Valley
+                Address: Beside Q-City, Gachibowli-Miyapur Road, Gachibowli, Hyderabad, Telangana, India.
+            </p>
+
+            <div class="bg" id="a4" style="background-image: url('');">
+                <h2><strong><i>Sarath City Mall:</i></strong></h2>
+            </div>
+            <p>
+                <br>
+                <strong>History:</strong> Sarath City Mall is a modern shopping and entertainment destination in Hyderabad.
+                <br>
+                <strong>Specialty:</strong> Wide variety of shops, restaurants, and a multiplex cinema.
+                <br>
+                <strong>Best Time to Go:</strong> Anytime for shopping and entertainment.
+                <br>
+                <strong>Food to Try:</strong> Diverse cuisines at mall eateries.
+                <br>
+                <strong>Things to Carry:</strong> Shopping list, comfortable shoes.
+                <br>
+                <strong>Things to Do:</strong> Shop, dine, catch a movie, and have a fun day out.
+                <br><br>
+                Sarath City Mall
+                Address: Kothaguda X Roads, Whitefields, HITEC City, Hyderabad, Telangana, India.
+            </p>
+
+            <div class="bg" id="a4" style="background-image: url('');">
+                <h2><strong><i>Toli Masjid:</i></strong></h2>
+            </div>
+            <p>
+                <br>
+                <strong>History:</strong> Toli Masjid, built in the 17th century, is an architectural gem showcasing Qutb Shahi style.
+                <br>
+                <strong>Specialty:</strong> Stunning arches and ornate decorations.
+                <br>
+                <strong>Best Time to Go:</strong> Early mornings or evenings.
+                <br>
+                <strong>Food to Try:</strong> Local eateries around.
+                <br>
+                <strong>Things to Carry:</strong> Respectful attire, camera.
+                <br>
+                <strong>Things to Do:</strong> Explore the historical mosque, appreciate the intricate details.
+                <br><br>
+                Toli Masjid
+                Address: Karwan Rd, Pathergatti, Charminar, Hyderabad, Telangana, India.
+            </p>
+
+            <div class="bg" id="a4" style="background-image: url('');">
+                <h2><strong><i>Birla Mandir:</i></strong></h2>
+            </div>
+            <p>
+                <br>
+                <strong>History:</strong> Birla Mandir, built in 1976, is a magnificent marble temple dedicated to Lord Venkateshwara.
+                <br>
+                <strong>Specialty:</strong> Intricate carvings and serene atmosphere.
+                <br>
+                <strong>Best Time to Go:</strong> Early mornings or evenings for tranquility.
+                <br>
+                <strong>Food to Try:</strong> Nearby vegetarian food joints.
+                <br>
+                <strong>Things to Carry:</strong> Respectful attire, camera.
+                <br>
+                <strong>Things to Do:</strong> Seek blessings, enjoy the spiritual ambiance.
+                <br><br>
+                Birla Mandir
+                Address: Hill Fort Rd, Ambedkar Colony, Khairatabad, Hyderabad, Telangana, India.
+            </p>
+
+            <div class="bg" id="a4" style="background-image: url('');">
+                <h2><strong><i>Palm Arabiana:</i></strong></h2>
+            </div>
+            <p>
+                <br>
+                <strong>History:</strong> Palm Arabiana offers Arabian-themed experiences and accommodations.
+                <br>
+                <strong>Specialty:</strong> Arabian-style tents, cultural performances, and camel rides.
+                <br>
+                <strong>Best Time to Go:</strong> Evenings for cultural programs.
+                <br>
+                <strong>Food to Try:</strong> Authentic Arabian cuisine.
+                <br>
+                <strong>Things to Carry:</strong> Comfortable clothing, camera.
+                <br>
+                <strong>Things to Do:</strong> Immerse in Arabian culture, enjoy the desert-like setting, and experience camel rides.
+                <br><br>
+                Palm Arabiana
+                Address: Shankarpalli - Chevella Road, Near Himayath Sagar, Moinabad, Hyderabad, Telangana, India.
+            </p>
+        </section>    
+    </div>
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // This provides a smooth scroll animation
+            });
+        }
+    
+        // Attach the scrollToTop function to the button click event
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+    
+        // Show the button when the user scrolls down 200px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
