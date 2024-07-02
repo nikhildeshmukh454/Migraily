@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/pgmap.css">
+  <title>PG in Hyderabad 2023</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+ 
+
+</head>
+
+<body>
+
+
+ <nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/FoodBlog.html">Food Blog</a></li>
+        <li><a href="/travelblog.html">Travel Blog</a></li>
+        <li><a href="/Services.html">Services in Hyderabad</a></li>
+        <li><a href="/Pginfo.html">PG Info</a></li>
+    </ul>
+</nav>
+
+  <div class="content  header">
+    
+    <h1><b>PG Locations in Hyderabad, Gachibowli</b></h1>
+   
+  
+  </div>
+  <div id="instruction"> Click on location, to know more  </div>
+
+
+
+  <div id="pgmap">
+   
+
+  </div>
+
+</body>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <script>
+    // Create the map
+    var map = L.map('pgmap').setView([ 17.44548369866286,  78.35518880983739], 16);
+
+    // Add a tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+      subdomains: ['a', 'b', 'c']
+    }).addTo(map);
+
+    // PG locations
+    var pgLocations = [
+      {
+        
+        name: "Athidhi Delight",
+        lat: 17.441714410087535,
+        lng: 78.35813413682249,
+        url: "/Pg/Athidhi.html"
+      },
+      {
+      
+        name: "Cozy Room",
+        lat: 17.441730815390194,
+        lng: 78.36049305328508,
+        url: "/Pg/cozyRoom.html"
+      },
+      {
+        
+        name: "happynest",
+        lat: 17.44003516078683,
+        lng: 78.35942539449407,
+        url: "/Pg/happynest.html"
+      },
+      {
+
+       
+        
+        name: "Sri Manoj",
+        lat: 17.44848369866286,
+        lng:    78.35689770242845,
+        url: "/Pg/manoj.html"
+      },
+      {
+    
+        name: "Nirvana",
+        lat: 17.440467580678267,
+        lng: 78.35818880983739,
+        url: "/Pg/Nirvana.html"
+      },
+      {
+
+      
+        name: "SBN",
+        lat: 17.44053282112514,
+        lng:78.34964137414282,
+        url: "/Pg/SBN.html"
+      },
+      {
+        
+        name: "Sri Balaji ",
+        lat: 17.44626007191157,
+        lng: 78.35896786565838,
+        url: "/Pg/SriBalaji.html"
+      },
+      {
+        
+        name: "Mukta ",
+        lat: 17.4432117623624,
+        lng:  78.3590376381569,
+        url: "/Pg/Mukta.html"
+      }
+    ];
+
+    // Add markers to the map
+    pgLocations.forEach(function(pg) {
+      var marker = L.marker([pg.lat, pg.lng]).addTo(map);
+      marker.bindTooltip(pg.name, {
+        permanent: true,
+        direction: 'top'
+      });
+      marker.bindPopup('<a href="' + pg.url + '">' + pg.name + '</a>');
+      marker.on('click', function() {
+        window.location.href = pg.url;
+      });
+    });
+  </script>
+
+</body>
+
+</html>
