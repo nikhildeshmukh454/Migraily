@@ -4,14 +4,19 @@ document.getElementById('service-form').addEventListener('submit', function(even
     const category = document.getElementById('category').value.trim().toLowerCase();
 
     if (category) {
-        // Adjust the file path or URL to a valid accessible location
-        readExcelFile('/services_info.csv', category); // Assuming the file is in the same directory
+        // Use the raw URL of the CSV file on GitHub
+        readExcelFile('https://raw.githubusercontent.com/nikhildeshmukh454/Migraily/main/services_info.csv', category);
     }
 });
 
 function readExcelFile(filePath, category) {
-    fetch(filePath) // Fetch the Excel file
-        .then(response => response.arrayBuffer())
+    fetch(filePath) // Fetch the CSV file from GitHub
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok.');
+            }
+            return response.arrayBuffer();
+        })
         .then(data => {
             const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
             const sheetName = workbook.SheetNames[0];
@@ -22,6 +27,7 @@ function readExcelFile(filePath, category) {
         })
         .catch(error => {
             console.error('Error fetching the file:', error);
+            displayErrorMessage('Error fetching the service information file. Please try again later.');
         });
 }
 
@@ -31,9 +37,10 @@ function displayServiceInfo(data, category) {
 
     const filteredData = data.filter(item => item.Category.toLowerCase() === category);
 
+    const messageContainer = document.getElementById('message-container');
+
     if (filteredData.length > 0) {
         // Display message in the message container
-        const messageContainer = document.getElementById('message-container');
         messageContainer.innerHTML = `<p>Migraily found service names for you in the category: ${category}</p>`;
 
         filteredData.forEach(item => {
@@ -46,6 +53,11 @@ function displayServiceInfo(data, category) {
         });
         
     } else {
-        serviceInfoDiv.textContent = 'No matching service information found.';
+        messageContainer.innerHTML = `<p>No matching service information found for the category: ${category}.</p>`;
     }
+}
+
+function displayErrorMessage(message) {
+    const messageContainer = document.getElementById('message-container');
+    messageContainer.innerHTML = `<p>${message}</p>`;
 }
