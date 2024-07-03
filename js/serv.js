@@ -5,7 +5,7 @@ document.getElementById('service-form').addEventListener('submit', function(even
 
     if (category) {
         // Adjust the file path or URL to a valid accessible location
-        readExcelFile('Migraily/services_info.csv', category); // Assuming the file is in the same directory
+        readExcelFile('/services_info.csv', category); // Assuming the file is in the same directory
     }
 });
 
