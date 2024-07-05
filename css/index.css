@@ -1,3 +1,4 @@
+
 /* Resetting default margins and paddings */
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
@@ -237,6 +238,11 @@ nav ul li a:hover {
     .header-text {
         font-size: 1.2rem;
         margin-top: 5px;
+    }
+
+    nav #nav-logo {
+        max-width: 30%;
+        margin-left: 5%;
     }
 
     #pgmap {
