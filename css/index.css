@@ -247,7 +247,7 @@ nav ul li a:hover {
 
     #Type-service, #top-food-blog, #top-travel-blog {
         margin: 20px;
-        padding: 10px;
+        padding-top: 10px;
     }
 
     nav ul {
