@@ -228,10 +228,6 @@ nav ul li a:hover {
         flex-direction: column;
         align-items: center;
     }
-     #Type-service, #top-food-blog, #top-travel-blog {
-        margin: 20px;
-        padding-top: 10px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -242,8 +238,6 @@ nav ul li a:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         box-sizing: border-box;
-
-
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -251,31 +245,10 @@ nav ul li a:hover {
 
     #Type-service, #top-food-blog, #top-travel-blog {
         margin: 20px;
-        padding-top: 10px;
-    }
-
-    nav ul {
-        flex-direction: row;
-        padding: 0;
-        width: 80%;
-    
-    }
-
-
-    nav{
-        padding-top: 20px;
+        padding-top:  10px; ;
     }
 
     
-
-    nav ul li a {
-        padding: 10px;
-    }
-
-    nav #nav-logo {
-        max-width: 30%;
-        margin: 10px auto;
-    }
 
     .header-text {
         font-size: 1.2rem;
@@ -405,4 +378,140 @@ nav ul li a:hover {
 
 #update-map:hover {
     background-color: #3e8e41;
+}
+
+
+
+/* Form Styles */
+form {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+    margin: 20px auto; /* Center horizontally */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left; /* Align label text left */
+}
+
+input[type="text"], select {
+    width: 100%; /* Full width input */
+    padding: 10px;
+    color: #000000;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #08bd80;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #07a36e;
+}
+
+
+/* Message Container */
+#message-container {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    color: #333;
+}
+
+/* Service Information Display */
+#service-info {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    margin-bottom: 20px;
+    width: calc(30% - 30px); /* Adjust width as needed */
+    max-width: 300px; /* Limit maximum width */
+    flex: 1 0 auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out; /* Adding smooth hover effect */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+}
+
+.service-item p {
+    margin: 10px 0;
+}
+
+.service-item h3 {
+    margin-top: 0;
+    color: #08bd80;
+    border-bottom: 2px solid #08bd80; /* Adding a bottom border under the heading */
+}
+
+
+/* Container styles for form */
+#service-form {
+   
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Label styles */
+#service-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Select styles */
+#service-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Submit button styles */
+#service-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#service-form input[type="submit"]:hover {
+    background-color: #45a049;
 }
