@@ -225,15 +225,15 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 732px) {
     .services {
-        flex: 1 1 calc(50% - 20px);
+        flex: 1 1 calc(50% - 20px); /* 2 per row on smaller screens */
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .services {
-        flex: 1 1 calc(100% - 20px);
+        flex: 1 1 calc(100% - 20px); /* 1 per row on mobile devices */
     }
 
     #Type-service, #top-food-blog, #top-travel-blog {
