@@ -214,26 +214,12 @@ nav ul li a:hover {
 
 
 
-@media (max-width: 700px) {
-    .services {
-        max-width: 40%;
-        flex: 1 1 40%;
-        margin: 0;
-        padding: 10px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 550px) {
+/* Styles for devices with a maximum width of 600px */
+@media (max-width: 600px) {
     .services {
         max-width: 100%;
-        margin: 0;
+        flex: 1 1 100%;
+        margin: 30px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
@@ -245,10 +231,8 @@ nav ul li a:hover {
 
     #Type-service, #top-food-blog, #top-travel-blog {
         margin: 20px;
-        padding-top:  10px; ;
+        padding-top: 10px;
     }
-
-    
 
     .header-text {
         font-size: 1.2rem;
@@ -275,18 +259,19 @@ nav ul li a:hover {
         margin-left: 5px;
     }
 
+    #Type-service{
+        margin-top: 10%;
+    }
+
     #Type-service h1, #top-food-blog h1, #top-travel-blog h1 {
         font-size: 24px;
         left: 0;
+       
         text-align: center;
     }
 
-    .services h2 {
-        font-size: 18px;
-    }
-
-    .services p {
-        font-size: 14px;
+    .services h2, .services p {
+        font-size: 10px;
     }
 
     .sell-all {
@@ -295,19 +280,36 @@ nav ul li a:hover {
         border-radius: 5px;
     }
 
-    #update-map {
-    height=400px;
-}
 
-#update-map:hover {
-    background-color: #3e8e41;
-}
+    #pgmap {
+       
+        width: 80%;
+        height: 450px;
+        border: 1px solid black;
+       left: 10%;
+    }
 
     
 }
 
-/* Navigation and Title Adjustments */
-@media (max-width: 768px) {
+/* Styles for devices with a maximum width of 800px but more than 600px */
+@media (max-width: 800px) and (min-width: 601px) {
+
+
+    .services {
+        max-width: 40%;
+        margin: 0;
+        flex: 1 1 30%;
+        margin: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     nav ul {
         font-size: 70%;
     }
@@ -318,6 +320,7 @@ nav ul li a:hover {
         color: #333333;
         text-align: center;
         margin-bottom: 20px;
+        margin-top: 30px;
         text-transform: uppercase;
     }
 }
