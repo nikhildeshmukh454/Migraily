@@ -212,28 +212,37 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1200px) {
-    .services {
-        flex: 1 1 calc(33.33% - 20px);
-    }
-}
 
-@media (max-width: 992px) {
-    .services {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
 
 @media (max-width: 732px) {
     .services {
-        flex: 1 1 calc(50% - 20px); /* 2 per row on smaller screens */
+        max-width: 40%;
+        flex: 1 1 40%;
+        margin: 0;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .services {
-        flex: 1 1 calc(100% - 20px); /* 1 per row on mobile devices */
+        max-width: 80%;
+        flex: 1 1 80%;
+        margin: 0;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #Type-service, #top-food-blog, #top-travel-blog {
@@ -242,22 +251,19 @@ nav ul li a:hover {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0;
-        width: 100%;
+        width: 80%;
     }
 
-    nav ul li {
-        width: 100%;
-        text-align: center;
-    }
+    
 
     nav ul li a {
         padding: 10px;
     }
 
     nav #nav-logo {
-        max-width: 50%;
+        max-width: 30%;
         margin: 10px auto;
     }
 
