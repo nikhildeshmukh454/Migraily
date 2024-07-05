@@ -1,11 +1,11 @@
-Resetting default margins and paddings
+/* Resetting default margins and paddings */
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     color: #000000;
 }
 
@@ -31,14 +31,12 @@ body {
 }
 
 #pgmap {
-    
-   left: 20%;
+    left: 20%;
     width: 60%;
     height: 80vh;
     border: 1px solid black;
     padding: 10px;
-  }
-  
+}
 
 /* Navigation */
 nav {
@@ -56,15 +54,15 @@ nav {
 }
 
 nav #nav-logo {
-    max-width: 15%; /* Adjust as needed */
-    margin-left: 5%; /* Adjust as needed */
+    max-width: 15%;
+    margin-left: 5%;
 }
 
 nav #nav-logo img {
-    max-height: 100%; /* Ensure the logo doesn't exceed the height of the navigation bar */
-    max-width: 100%; /* Ensure the logo doesn't exceed the width of the navigation bar */
-    height: auto; /* Maintain aspect ratio */
-    width: auto; /* Maintain aspect ratio */
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 nav ul {
@@ -74,7 +72,7 @@ nav ul {
     align-items: center;
     padding: 0;
     margin: 0;
-    width: 75%; /* Adjust to leave space for the logo */
+    width: 75%;
 }
 
 nav ul li {
@@ -92,10 +90,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #08bd80;
 }
-
-
-
-
 
 /* Logo */
 #logo {
@@ -133,7 +127,6 @@ nav ul li a:hover {
     margin: 40px;
     padding: 20px;
     padding-top: 6%;
-
     background: linear-gradient(45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
     border-radius: 10px;
 }
@@ -150,7 +143,7 @@ nav ul li a:hover {
 
 .services {
     max-width: 20%;
-    flex: 1 1 20%; /* Flex basis with a fallback */
+    flex: 1 1 20%;
     margin: 0;
     padding: 10px;
     background-color: #fff;
@@ -193,7 +186,6 @@ nav ul li a:hover {
     flex-grow: 1;
 }
 
-
 .sell-all {
     right: 0;
     height: 4%;
@@ -209,44 +201,109 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-
-
 .services a {
-    display: block; /* Ensure the entire container is clickable */
+    display: block;
     text-decoration: none;
 }
 
 .services img {
-    width: 100%; /* Ensure images fill their container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
-
-
-
 
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
     .services {
-        flex: 1 1 calc(33.33% - 20px); /* 3 per row on medium screens */
+        flex: 1 1 calc(33.33% - 20px);
     }
 }
 
 @media (max-width: 992px) {
     .services {
-        flex: 1 1 calc(50% - 20px); /* 2 per row on smaller desktops */
+        flex: 1 1 calc(50% - 20px);
     }
 }
 
 @media (max-width: 768px) {
     .services {
-        flex: 1 1 calc(50% - 20px); /* 2 per row on tablets */
+        flex: 1 1 calc(50% - 20px);
     }
 }
 
 @media (max-width: 576px) {
     .services {
-        flex: 1 1 calc(100% - 20px); /* 1 per row on mobile devices */
+        flex: 1 1 calc(100% - 20px);
+    }
+
+    #Type-service, #top-food-blog, #top-travel-blog {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    nav #nav-logo {
+        max-width: 50%;
+        margin: 10px auto;
+    }
+
+    .header-text {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    #pgmap {
+        left: 0;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .logo-container {
+        margin: 10px 0;
+    }
+
+    .social-media-icons {
+        margin-top: 10px;
+    }
+
+    .social-media-icons img {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    #Type-service h1, #top-food-blog h1, #top-travel-blog h1 {
+        font-size: 24px;
+        left: 0;
+        text-align: center;
+    }
+
+    .services h2 {
+        font-size: 18px;
+    }
+
+    .services p {
+        font-size: 14px;
+    }
+
+    .sell-all {
+        height: auto;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
 }
 
@@ -266,14 +323,9 @@ nav ul li a:hover {
     }
 }
 
-
-
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
-
-
-
 
 /* Style the dropdown menu */
 #location-type {
@@ -283,61 +335,58 @@ nav ul li a:hover {
     border-radius: 5px;
     width: 200px;
     margin-bottom: 20px;
-   
-  align-self: center;
-  background-color: #fff;
-
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-  box-sizing: border-box;
-  color: #41403e;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Neucha, sans-serif;
-  font-size: 1.5rem;
-  line-height: 23px;
-  outline: none;
-  padding: .75rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    align-self: center;
+    background-color: #fff;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1.5rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .button-55:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
 }
 
 .button-55:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
-  
-  
-  #location-type option {
+
+#location-type option {
     padding: 10px;
-  }
-  
-  /* Style the update map button */
-  #update-map {
+}
+
+/* Style the update map button */
+#update-map {
     background-color: #4CAF50;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  #update-map:hover {
+}
+
+#update-map:hover {
     background-color: #3e8e41;
-  }
+}
