@@ -7,6 +7,190 @@
     <link rel="icon" type="image/x-icon" href="images/MIGRAILYlogo.png">
 
     <link rel="stylesheet" href="/css/foodBlog.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.con {
+    
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.box {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    padding-top: 0;
+}
+
+#a, #b {
+    position: absolute;
+    height: 110%;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#a {
+    transform: translateZ(-70px) scale(8);
+    overflow-y: hidden;
+}
+
+#b {
+    transform: translateZ(-30px) scale(2);
+    width: 100%;
+    height: 100%;
+}
+
+#c {
+    position: absolute;
+    padding: 2px;
+    color: white;
+    text-shadow: 2px 2px black;
+    background: rgba(0, 128, 0, 0.8);
+    border: 2px solid black;
+    box-shadow: 5px 5px white;
+    transform: translateZ(-5px);
+    font-size: 50px;
+}
+
+section {
+    padding: 5%;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: black;
+    border: 2px solid lightgreen;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+#a1, #a2, #a3, #a4, #a5 {
+    color: green;
+    text-shadow: 2px 2px white;
+}
+
+#a3, #a4 {
+    background-image: url();
+}
+
+#a5 {
+    background-color: black;
+}
+
+#a10{
+    padding: 2%;
+}
+
+p {
+    height: auto;
+}
+
+pre {
+    color: lightgreen;
+    text-align: left;
+}
+
+#a6 {
+    color: white;
+}
+
+nav {
+    background: linear-gradient(-45deg, #9ee4ce, #ffffff, #8edcca, #aaf2e1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav #nav-logo {
+    max-width: 15%; /* Adjust as needed */
+    margin-left: 5%; /* Adjust as needed */
+}
+
+nav #nav-logo img {
+    max-height: 100%; /* Ensure the logo doesn't exceed the height of the navigation bar */
+    max-width: 100%; /* Ensure the logo doesn't exceed the width of the navigation bar */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 75%; /* Adjust to leave space for the logo */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #08bd80;
+}
+
+
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #08bd80;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background-color: #067a56;
+}
+    </style>
     
 
 </head>
