@@ -5,7 +5,7 @@ document.getElementById('service-form').addEventListener('submit', function(even
 
     if (category) {
         // Use the raw URL of the CSV file on GitHub
-        readExcelFile('https://github.com/nikhildeshmukh454/Migraily/blob/main/services_info.csv', category);
+        readExcelFile('https://raw.githubusercontent.com/nikhildeshmukh454/Migraily/main/services_info.csv', category);
     }
 });
 
